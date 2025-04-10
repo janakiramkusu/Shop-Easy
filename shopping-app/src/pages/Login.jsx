@@ -36,7 +36,7 @@ function Login() {
   return (
     <div className="login-wrapper">
       <div className="login-container">
-         <img src="https://github.com/janakiramkusu/Shop-Easy/tree/9c3ad31148ec1a927e1dbe0df0a8c94800c0d74f/shopping-app/src/assets" alt="Login" className="login-image" />
+         <img src="https://github.com/janakiramkusu/Shop-Easy/blob/9c3ad31148ec1a927e1dbe0df0a8c94800c0d74f/shopping-app/src/assets/shopping.png" alt="Login" className="login-image" />
         <h2>Welcome Back 👋</h2>
         <form className="login-form" onSubmit={handleSubmit}>
           <input
