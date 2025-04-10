@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import '../styles/login.css';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import loginImg from 'assets/loginillustration.svg';
 
 function Login() {
   const { login } = useContext(AuthContext);
