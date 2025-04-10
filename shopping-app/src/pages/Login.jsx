@@ -68,7 +68,8 @@ function Login() {
           {error && <p className="error-msg">{error}</p>}
 
           <div className="login-hint">
-            <span>Don’t have an account? <a href="#">Sign up</a></span>
+            <span>Don’t have an account? <a href="#">Sign up</a></span>  <br />
+            <p>Test Login → <strong>Username:</strong> mor_2314 | <strong>Password:</strong> 83r5^_</p>
           </div>
         </form>
       </div>
