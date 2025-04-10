@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import '../styles/login.css';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-import loginImg from 'assets/loginillustration.svg';
 
 function Login() {
   const { login } = useContext(AuthContext);
@@ -37,7 +36,6 @@ function Login() {
   return (
     <div className="login-wrapper">
       <div className="login-container">
-        <img src={loginImg} alt="Login" className="login-image" />
         <h2>Welcome Back 👋</h2>
         <form className="login-form" onSubmit={handleSubmit}>
           <input
