@@ -7,17 +7,15 @@ import Cart from './pages/Cart';
 import Header from './components/Header';
 import { AuthContext } from './context/AuthContext';
 
-// A wrapper component to access `useLocation` inside Router
 const AppRoutes = () => {
   const { token } = useContext(AuthContext);
   const isLoggedIn = !!token;
   const location = useLocation();
 
-  const hideHeaderRoutes = ['/login', '/register'];
+  const hideHeaderRoutes = ['/login'];
 
   return (
     <>
-      {/* Show Header only if logged in and not on login/register routes */}
       {isLoggedIn && !hideHeaderRoutes.includes(location.pathname) && <Header />}
 
       <Routes>
