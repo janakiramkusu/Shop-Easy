@@ -36,7 +36,7 @@ function Login() {
   return (
     <div className="login-wrapper">
       <div className="login-container">
-        <img src="assets/login-illustration.svg.svg" alt="Login" className="login-image" />
+        <img src="assets/loginillustration.svg" alt="Login" className="login-image" />
         <h2>Welcome Back 👋</h2>
         <form className="login-form" onSubmit={handleSubmit}>
           <input
