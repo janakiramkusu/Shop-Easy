@@ -56,8 +56,8 @@ function ProductDetail() {
         <p className="delivery">🚚 Free Delivery by <strong>Tomorrow</strong></p>
 
         <p className="description">{product.description}</p>
-        
-        <div className="button-group sticky-buttons">
+
+        <div className="button-group sticky-buttons ">
           <button className="add-btn" onClick={handleAddToCart}>Add to Cart</button>
           {showToast && <div className="toast">🛒 Added to cart!</div>}
           <button className="buy-btn">Buy Now</button>
