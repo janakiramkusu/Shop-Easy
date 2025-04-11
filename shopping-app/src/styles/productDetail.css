@@ -124,3 +124,83 @@
 .add-btn:hover {
   background-color: #e55b00;
 }
+/* Promo Badge */
+.promo-box {
+  background-color: #e6e0f8;
+  color: #5d3fd3;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid #5d3fd3;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+/* Price Area */
+.price-section {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #757575;
+  font-size: 1.1rem;
+}
+
+.discount {
+  color: #388e3c;
+  font-weight: bold;
+}
+
+
+.sticky-buttons {
+  position: sticky;
+  bottom: 0;
+  background: white;
+  padding: 1rem 0;
+  z-index: 10;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  border-top: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .detail-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .product-img-wrapper,
+  .product-info {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .product-img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+ 
+  .button-group {
+    display: flex;
+    flex-direction: row;  
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .add-btn,
+  .buy-btn {
+    flex: 1;        
+    min-width: 40%;
+  }
+}

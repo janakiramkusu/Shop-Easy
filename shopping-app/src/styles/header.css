@@ -1,7 +1,7 @@
 .header {
   background-color: #2874f0;
   color: white;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1.2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,6 +9,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+  flex-wrap: nowrap;
 }
 
 .logo {
@@ -16,11 +17,14 @@
   font-weight: bold;
   color: white;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 nav {
   display: flex;
   align-items: center;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
 }
 
 .nav-icon {
@@ -33,6 +37,7 @@ nav {
   padding: 0.5rem 0.8rem;
   border-radius: 4px;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .nav-icon:hover {
@@ -63,14 +68,31 @@ nav {
   animation: bounce 0.3s ease;
 }
 
-@media (min-width: 1024px) {
-  nav {
-    gap: 1.5rem;
-  }
-}
-
+/* Bouncing animation */
 @keyframes bounce {
   0% { transform: scale(0.8); }
   50% { transform: scale(1.2); }
   100% { transform: scale(1); }
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .nav-icon {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+    gap: 4px;
+  }
+
+  .cart-count {
+    font-size: 0.65rem;
+    padding: 1.5px 5px;
+  }
+
+  nav {
+    gap: 1rem;
+  }
 }
